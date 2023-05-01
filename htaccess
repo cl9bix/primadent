@@ -1,0 +1,36 @@
+ErrorDocument 403 /page27707210.html
+ErrorDocument 404 /page27707210.html
+
+DirectoryIndex page27706401.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://primadent\.uz\.ua/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.primadent.uz.ua [NC]
+RewriteRule ^(.*)$ https://primadent\.uz\.ua/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^contacts$ page27707191.html [NC]
+RewriteRule ^contacts/$ page27707191.html [NC]
+
+RewriteRule ^prices$ page27707173.html [NC]
+RewriteRule ^prices/$ page27707173.html [NC]
+
+RewriteRule ^thanks$ page28035429.html [NC]
+RewriteRule ^thanks/$ page28035429.html [NC]
+
+RewriteRule ^portfolio$ page32405893.html [NC]
+RewriteRule ^portfolio/$ page32405893.html [NC]
+
+RewriteRule ^header$ page28053649.html [NC]
+RewriteRule ^header/$ page28053649.html [NC]
+
+RewriteRule ^footer$ page28053887.html [NC]
+RewriteRule ^footer/$ page28053887.html [NC]
+
+

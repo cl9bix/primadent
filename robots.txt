@@ -1,0 +1,22 @@
+User-Agent: *
+Disallow: /page28028844.html
+Disallow: /page27707210.html
+Disallow: /page28053649.html
+Disallow: /header
+Disallow: /page28053887.html
+Disallow: /footer
+Disallow: /page32408750.html
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://primadent.uz.ua/sitemap.xml
+Host: https://primadent.uz.ua
